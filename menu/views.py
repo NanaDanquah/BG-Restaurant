@@ -7,5 +7,5 @@ from .models import MenuItem
 class MenuItemView(View):
     def get(self, request):
         menu = MenuItem.objects.all()
-        context = {'menu': menu}
-        return render(request, "index.html", context)
+        main_data = {'menu': menu}
+        return render(request, "base.html", main_data)
