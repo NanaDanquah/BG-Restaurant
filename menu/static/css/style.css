@@ -1,0 +1,37 @@
+.hero {
+    width: 100vw;
+    height: 35vh;
+    background: linear-gradient(to right, #44444E, #D3DAD9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        width: 100vw;
+        height: 25vh;
+        background: linear-gradient(to right, #44444E, #D3DAD9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+     h1 {
+        font-size: 24px; 
+    }
+
+    .hero-text-body {
+        font-size: 15px;
+    }
+}

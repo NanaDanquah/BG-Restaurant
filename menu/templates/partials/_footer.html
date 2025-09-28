@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Div</title>
+    <style>
+        .gradient-div {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-div">
+        This div has a gradient background!
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Gradient Div</title>
+    <style>
+        .outer-div {
+            width: 80vw; /* Outer div takes 80% of viewport width */
+            height: 80vh; /* 80% of viewport height */
+            background: #f0f0f0; /* Light gray background for contrast */
+            margin: 10vh auto; /* Center outer div */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gradient-div {
+            width: 50%; /* Inner div is 50% of outer div's width */
+            height: 50%; /* 50% of outer div's height */
+            background: linear-gradient(to right, #36d1dc, #5b86e5); /* Blue gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-div">
+        <div class="gradient-div">
+            Gradient Inner Div
+        </div>
+    </div>
+</body>
+</html>
