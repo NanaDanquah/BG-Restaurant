@@ -1,0 +1,71 @@
+{% load static %}
+
+<!-- <div class="row ">
+    <div class="col-sm-12 col-md-6 col-lg-4 card">
+        <img class="card-img rounded-start" src="{% static 'img/menu-items/Jollof.jpg' %}" alt="jollof">
+      <div class="card-body">
+        <p class="card-text">Assorted Jollof</p>
+      </div>      
+    </div>
+
+
+    <div class="col-sm-12 col-md-6 col-lg-4 card">
+        <img class="card-img rounded-start" src="{% static 'img/menu-items/waakye.jpg' %}" alt="waakye">
+        <div class="card-body">
+            <p class="card-text">Special Waakye</p>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12 col-md-6 col-lg-4 card">
+        <img class="card-img rounded-start" src="{% static 'img/menu-items/Tuo_zaafi.jpg' %}" alt="">
+        <div class="card-body">
+            <p class="card-text">Tuo zaafi</p>
+        </div>
+    </div>
+    
+</div> -->
+
+<div class="row pt-2" id="section">
+ 
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card pt-3 m-2">
+            <img class="card-img rounded-start"  src="{% static 'img/menu-items/waakye.jpg' %}">
+            <div class="card-body">
+                    <p class="card-text special">Our menu consists of seasonal local and continental dishes.
+                        <a href="{% url 'index' %}">See our new menu</a> 
+                    </p>   
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12 col-md-6 col-lg-4 ">
+        <div class="card pt-3 m-2">
+             <img class="card-img rounded-start" src="{% static 'img/hero1.jpg' %}" alt="jollof">
+            <div class="card-body">
+                <p class="card-text">Reserve your table for a Ghanaian dining experience
+                    <a href="">Book your table</a>
+                </p>
+               
+            </div>   
+
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4 ">
+        <div class="card pt-3 m-2">
+            <img src="{% static 'img/hero.jpg'%}" alt="" class="card-img rounded-start">
+            <div class="card-body">
+                <p class="card-text">
+                    Opening Hours <br>    
+                    11:00 AM - 10:00PM
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+ 
+
+</div>
