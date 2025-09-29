@@ -12,3 +12,9 @@ class MenuItem(models.Model):
 
     def __str__(self):
         return f'{self.title}'
+
+
+class Booking(models.Model):
+    name = models.CharField(max_length=255)
+    no_of_guest = models.IntegerField(validators=[MinValueValidator(1)])
+    date = models.DateTimeField()
