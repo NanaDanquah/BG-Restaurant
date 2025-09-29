@@ -8,8 +8,12 @@ def index(request):
     return render(request, "index.html")
 
 
+# def menu(request):
+#     return render(request, "menu.html")
+
+
 class MenuItemView(View):
     def get(self, request):
         menu = MenuItem.objects.all()
         main_data = {'menu': menu}
-        return render(request, "base.html", main_data)
+        return render(request, "menu.html", main_data)

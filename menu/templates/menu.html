@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content  %}
+<div class="row" style="height: 50gvh;">
+
+    hcmbv
+
+    {% for item in menu %}
+    <li>
+        <a href=""> {{ item.title}}</a>
+       
+    </li>
+    {% endfor %}
+
+</div>
+{% endblock %}
